@@ -1,0 +1,29 @@
+function fabs(r)
+    if r > 0.0
+        return r
+    else
+        r = -1.0 * r
+        return r
+    end
+end
+
+
+function sqrt(x)
+    t1 = 1.0
+    t2 = 0.0
+    r = 1.0
+    eps = 0.0000001
+    id = r
+    while id > eps
+        id = fabs(r)
+        t2 = 0.5 * (t1 + (x / t1))
+        r = t2 - t1
+        t1 = t2
+    end
+    print("Vysledek je:", t2, "\n")
+end
+
+p = print("Zadej cislo pro vypocet odmocniny:")
+a = input()
+in = numeric(a)
+f = sqrt(in)

@@ -1,0 +1,18 @@
+function haha (a)
+    a = a + 1.0
+    id = lolo(a)
+    x = print(a,"\n")
+end
+
+function lolo (a)
+    a = a + 1.0
+
+    if (a < 100.0)
+        id = haha(a)
+        x = print(a,"\n")
+    else
+    end
+end
+
+a = 0.0
+id = haha(a)

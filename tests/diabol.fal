@@ -1,0 +1,17 @@
+function _666(cislo)
+	if cislo > 666.0 
+		a = cislo - 666.0
+		x = print(cislo, " - ", a, " = ", 666.0,"\n")
+	else
+		a = 666.0 - cislo
+		x = print(cislo, " + ", a, " = ", 666.0,"\n")
+	end
+end
+
+x = print("Zadaj cislo: ")
+c = input()
+c = numeric(c)
+x = _666(c)
+
+
+
